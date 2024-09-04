@@ -25,8 +25,8 @@ pipeline{
                     -Dquarkus.container-image.group=$QUAY_USR \
                     -Dquarkus.container-image.name=do400-deploying-lab \
                     -Dquarkus.container-image.usermane=$QUAY_USR \
-                    -Dquarkus.container-image.PASSWORD="$QUAY_PSW" \
-                    -Dquarkus.container-image.TAG=BUILD-${BUILD_NUMBER} \
+                    -Dquarkus.container-image.password="$QUAY_PSW" \
+                    -Dquarkus.container-image.tag=build-${BUILD_NUMBER} \
                     -Dquarkus.container-image.additional-tags=latest \
                     -Dquarkus.container-image.push=true
                 '''
